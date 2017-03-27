@@ -9,6 +9,10 @@
   "keywords": [
     "yeoman-generator"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:kevin-xiong/generator-l.git"
+  },
   "author": "kevinxiong",
   "license": "ISC",
   "dependencies": {
