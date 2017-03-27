@@ -1,0 +1,102 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'publish',
+1 verbose cli   '--access=public' ]
+2 info using npm@3.9.3
+3 info using node@v6.2.1
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: '/Users/xwj/dev/lu/generator-lu',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /Users/xwj/.npm/generator-lu/1.0.0/package.tgz not in flight; packing
+9 verbose correctMkdir /Users/xwj/.npm correctMkdir not in flight; initializing
+10 info lifecycle generator-lu@1.0.0~prepublish: generator-lu@1.0.0
+11 silly lifecycle generator-lu@1.0.0~prepublish: no script for prepublish, continuing
+12 verbose tar pack [ '/Users/xwj/.npm/generator-lu/1.0.0/package.tgz',
+12 verbose tar pack   '/Users/xwj/dev/lu/generator-lu' ]
+13 verbose tarball /Users/xwj/.npm/generator-lu/1.0.0/package.tgz
+14 verbose folder /Users/xwj/dev/lu/generator-lu
+15 verbose addLocalTarball adding from inside cache /Users/xwj/.npm/generator-lu/1.0.0/package.tgz
+16 verbose correctMkdir /Users/xwj/.npm correctMkdir not in flight; initializing
+17 silly cache afterAdd generator-lu@1.0.0
+18 verbose afterAdd /Users/xwj/.npm/generator-lu/1.0.0/package/package.json not in flight; writing
+19 verbose correctMkdir /Users/xwj/.npm correctMkdir not in flight; initializing
+20 verbose afterAdd /Users/xwj/.npm/generator-lu/1.0.0/package/package.json written
+21 silly publish { name: 'generator-lu',
+21 silly publish   version: '1.0.0',
+21 silly publish   description: '基于react+reactdom+webpack+es6的项目目录快速生成器',
+21 silly publish   main: 'index.js',
+21 silly publish   scripts: { test: 'echo "Error: no test specified" && exit 1' },
+21 silly publish   keywords: [ 'yeoman-generator' ],
+21 silly publish   author: { name: 'kevinxiong' },
+21 silly publish   license: 'ISC',
+21 silly publish   dependencies:
+21 silly publish    { chai: '^3.3.0',
+21 silly publish      chalk: '^1.1.1',
+21 silly publish      'fs-extra': '^0.24.0',
+21 silly publish      mocha: '^2.3.3',
+21 silly publish      'yeoman-generator': '^0.24.1',
+21 silly publish      yosay: '^1.0.5' },
+21 silly publish   readme: 'ERROR: No README data found!',
+21 silly publish   _id: 'generator-lu@1.0.0',
+21 silly publish   _shasum: '6eb1f65b2777cb92ff21ecd720255662209c0c9b',
+21 silly publish   _from: '.' }
+22 verbose getPublishConfig undefined
+23 silly mapToRegistry name generator-lu
+24 silly mapToRegistry using default registry
+25 silly mapToRegistry registry http://registry.npm.taobao.org/
+26 silly mapToRegistry data Result {
+26 silly mapToRegistry   raw: 'generator-lu',
+26 silly mapToRegistry   scope: null,
+26 silly mapToRegistry   name: 'generator-lu',
+26 silly mapToRegistry   rawSpec: '',
+26 silly mapToRegistry   spec: 'latest',
+26 silly mapToRegistry   type: 'tag' }
+27 silly mapToRegistry uri http://registry.npm.taobao.org/generator-lu
+28 verbose publish registryBase http://registry.npm.taobao.org/
+29 silly publish uploading /Users/xwj/.npm/generator-lu/1.0.0/package.tgz
+30 verbose request uri http://registry.npm.taobao.org/generator-lu
+31 verbose request sending authorization for write operation
+32 info attempt registry request try #1 at 01:17:56
+33 verbose request id 4ed62831d0924bfb
+34 http request PUT http://registry.npm.taobao.org/generator-lu
+35 http 403 http://registry.npm.taobao.org/generator-lu
+36 verbose headers { server: 'nginx/1.4.6 (Ubuntu)',
+36 verbose headers   date: 'Mon, 27 Mar 2017 17:17:54 GMT',
+36 verbose headers   'content-type': 'application/json; charset=utf-8',
+36 verbose headers   'transfer-encoding': 'chunked',
+36 verbose headers   connection: 'keep-alive',
+36 verbose headers   'x-current-requests': '1',
+36 verbose headers   'x-readtime': '7',
+36 verbose headers   'content-encoding': 'gzip' }
+37 verbose request invalidating /Users/xwj/.npm/registry.npm.taobao.org/generator-lu on PUT
+38 error publish Failed PUT 403
+39 verbose stack Error: no_perms Private mode enable, only admin can publish this module: generator-lu
+39 verbose stack     at makeError (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:264:12)
+39 verbose stack     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:252:14)
+39 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:178:7
+39 verbose stack     at Gunzip.onEnd (zlib.js:227:5)
+39 verbose stack     at emitNone (events.js:91:20)
+39 verbose stack     at Gunzip.emit (events.js:185:7)
+39 verbose stack     at endReadableNT (_stream_readable.js:926:12)
+39 verbose stack     at _combinedTickCallback (internal/process/next_tick.js:74:11)
+39 verbose stack     at process._tickCallback (internal/process/next_tick.js:98:9)
+40 verbose statusCode 403
+41 verbose pkgid generator-lu
+42 verbose cwd /Users/xwj/dev/lu/generator-lu
+43 error Darwin 16.4.0
+44 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "publish" "--access=public"
+45 error node v6.2.1
+46 error npm  v3.9.3
+47 error code E403
+48 error no_perms Private mode enable, only admin can publish this module: generator-lu
+49 error If you need help, you may report this error at:
+49 error     <https://github.com/npm/npm/issues>
+50 verbose exit [ 1, true ]
